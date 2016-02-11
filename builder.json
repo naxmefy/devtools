@@ -1,0 +1,33 @@
+{
+  "osx" : {
+    "title": "DevTools",
+    "background": "assets/osx/installer.png",
+    "icon": "assets/osx/mount.icns",
+    "icon-size": 80,
+    "contents": [
+      { "x": 438, "y": 344, "type": "link", "path": "/Applications" },
+      { "x": 192, "y": 344, "type": "file" }
+    ]
+  },
+  "win" : {
+    "title" : "DevTools",
+    "version" : "0.1.0",
+    "publisher": "naxmefy",
+    "icon" : "assets/win/icon.ico",
+    "verbosity": 1,
+    "nsiTemplate" : "path/to/custom/installer.nsi.tpl",
+    "fileAssociation": {
+      "extension": ".devtool",
+      "fileType": "DevTools File"
+    }
+  },
+  "linux" : {
+    "arch" : 64,
+    "target" : "deb",
+    "version" : "0.1.0",
+    "title" : "DevTools",
+    "comment" : "you may love this tool as developer",
+    "executable" : "myExec",
+    "maintainer": "naxmefy <m.neundorf@live.de>"
+  }
+}
